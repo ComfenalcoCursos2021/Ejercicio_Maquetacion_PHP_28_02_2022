@@ -3,6 +3,7 @@
     --colorPrincipal: #000;
     --colorLetras: #fff;
     --colorTransparencia: #0000005e;
+    --colorBotones: #345eaf;
 }
 *{
     margin: 0;
@@ -85,8 +86,8 @@ header .logo img{
     position: relative;
     width: 100%;
     min-height: 100vh;
-    padding: 0 100px;
-    justify-content: center;
+    padding: 120px 100px;
+    justify-content: flex-start;
     align-items: center;
 }
 .banner .bg{
@@ -98,3 +99,57 @@ header .logo img{
     object-fit: cover;
 }
 /************************************************************/
+.content{
+    position: relative;
+    z-index: 1;
+    max-width: 650px;
+}
+.movieTitle{
+    max-width: 250px;
+}
+.banner .content h4{
+    color: var(--colorLetras);
+    font-weight: 500;
+}
+.banner .content h4 span{
+    padding: 0 10px;
+    border-right: 1px solid var(--colorLetras);
+}
+.banner .content h4 span:first-child{
+    padding: 0;
+}
+.banner .content h4 span:last-child{
+    border-right: none;
+}
+.banner .content p{
+    opacity: .7;
+    font-size: 1em;
+    font-weight: 300;
+    line-height: 1.5em;
+    color: var(--colorLetras);
+    margin: 15px 0 25px;
+}
+.banner .content .buttons a{
+    position: relative;
+    display: inline-block;
+    margin-right: 10px;
+    background: var(--colorBotones);
+    color: var(--colorLetras);
+    padding: 6px 20px;
+    text-decoration: none;
+    font-weight: 500;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+.banner .content .buttons a ion-icon{
+    font-size: 18px;
+    vertical-align: middle;
+}
+.banner .content .buttons a:nth-child(2){
+    background: var(--colorTransparencia);
+    border: 1px solid var(--colorBotones);
+}
+.banner .content .buttons :hover:nth-child(2){
+    color: var(--colorBotones);
+    background: var(--colorLetras);
+}
