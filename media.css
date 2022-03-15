@@ -1,4 +1,11 @@
 @media(max-width: 991px){
+    body{
+        background-image: url('img/bgMovil.jpg') !important;
+        background-position: center center !important;
+        background-repeat: no-repeat !important;
+        background-attachment: fixed !important;
+        background-size: cover !important;
+    }
     header{
         padding: 20px 50px !important;
         flex-direction: column;
@@ -31,7 +38,7 @@
         max-width: 90% !important;
     }
     .banner .bg{
-        height: 110vh !important;
+        display: none;
     }
 
 }

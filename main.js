@@ -1,6 +1,6 @@
-// https://comfenalcocursos2022.000webhostapp.com/Ejercicio_Maquetacion_PHP_28_02_2022/api.php
+//https://comfenalcocursos2022.000webhostapp.com/Ejercicio_Maquetacion_PHP_28_02_2022/api.php
 addEventListener("DOMContentLoaded", async(e)=>{
-    let peticion = await fetch("api.php");
+    let peticion = await fetch("https://comfenalcocursos2022.000webhostapp.com/Ejercicio_Maquetacion_PHP_28_02_2022/api.php");
     let json = await peticion.json();
     console.log(json);
     document.querySelector(".logo").insertAdjacentHTML("beforeend", json.imgen);
