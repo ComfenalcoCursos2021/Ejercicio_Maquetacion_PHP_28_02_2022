@@ -17,8 +17,8 @@
     </div>
     ';
     $plantilla->mision = (string) '
-        <a class="play" >
-            <ion-icon name="ellipse-outline"></ion-icon> Misiones a Marte
+        <a class="play" data-video="false">
+            <ion-icon name="ellipse-outline" ></ion-icon> Misiones a Marte
         </a>
     ';
 ?>

@@ -13,10 +13,12 @@ addEventListener("DOMContentLoaded", async(e)=>{
     // Mostrar Video
     document.querySelector(".play").addEventListener("click", (e)=>{
         document.querySelector(".trailer").classList.toggle("active");
+        document.querySelector(".trailer video").play();
     })
     //Cerrar Video
     document.querySelector("ion-icon[name='close']").addEventListener("click", (e)=>{
         document.querySelector(".trailer").classList.toggle("active");
+        document.querySelector(".trailer video").pause();
     })
 })
 
