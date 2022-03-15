@@ -9,11 +9,16 @@
             <span>50 Años. </span>
             <span>Pretoria (Sudáfrica). </span>
         </h4>
-        <p>El 5 de mayo, SpaceX lanzó y aterrizó con éxito su nave espacial reutilizable, la Starship SN15. Este fue un logro histórico para la nave construida que se convertiría en la primera nave espacial interplanetaria totalmente reutilizable ocupada por humanos. Pero la conversación pública sobre el fundador y consejero delegado de SpaceX, Elon Musk, ha sido una mezcla de ideas, con muchas celebridades e intelectuales que critican la riqueza de Musk y su aspiración de ir a Marte y finalmente colonizar el espacio.</p>
+        <p>“El objetivo general es hacer la vida multiplanetaria y permitir que la humanidad se convierta en una civilización espacial”, aseguró Elon Musk, quien cree que SpaceX ayudará a hacer realidad esta idea. Asimismo el empresario considera que Marte es el planeta candidato para convertirse en el nuevo hogar de la humanidad en caso de la Tierra se convierta en un sitio inhabitable.</p>
         <div class="buttons">
             <a href="#"><ion-icon name="play-outline"></ion-icon> Ver</a>
             <a href="#"><ion-icon name="add-outline"></ion-icon> Lista</a>
         </div>
     </div>
+    ';
+    $plantilla->mision = (string) '
+        <a class="play" >
+            <ion-icon name="ellipse-outline"></ion-icon> Misiones a Marte
+        </a>
     ';
 ?>

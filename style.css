@@ -4,6 +4,8 @@
     --colorLetras: #fff;
     --colorTransparencia: #0000005e;
     --colorBotones: #345eaf;
+    --colorDrone: #e28e66;
+    --tamanoGif: 55px;
 }
 *{
     margin: 0;
@@ -98,7 +100,6 @@ header .logo img{
     height: 100%;
     object-fit: cover;
 }
-/************************************************************/
 .content{
     position: relative;
     z-index: 1;
@@ -127,7 +128,7 @@ header .logo img{
     font-weight: 300;
     line-height: 1.5em;
     color: var(--colorLetras);
-    margin: 15px 0 25px;
+    margin: 15px 0 15px;
 }
 .banner .content .buttons a{
     position: relative;
@@ -152,4 +153,69 @@ header .logo img{
 .banner .content .buttons :hover:nth-child(2){
     color: var(--colorBotones);
     background: var(--colorLetras);
+}
+/************************************************************/
+/********************Video***********************************/
+.play{
+    position: absolute;
+    bottom: 50px;
+    left: 100px;
+    display: inline-flex;
+    justify-content: flex-start;
+    align-items: center;
+    color: var(--colorLetras);
+    text-transform: uppercase;
+    font-weight: 500;
+    text-decoration: none;
+    letter-spacing: 1px;
+    font-size: 1.2em;
+    cursor: pointer;
+}
+.play::before{
+    content:"";
+    position: absolute;
+    left: 15px;
+    z-index: 1;
+    background-image: url('img/drone.gif');
+    background-size: var(--tamanoGif);
+    background-repeat: no-repeat;
+    width: var(--tamanoGif); 
+    height: var(--tamanoGif);
+}
+.play ion-icon{
+    font-size: 85px;
+    color: var(--colorDrone);
+    opacity: .6;
+    margin-right: 5px;
+}
+.trailer{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 500;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur(15px);
+    visibility: hidden;
+    opacity: 0;
+}
+.trailer.active{
+    visibility: visible;
+    opacity: 1;
+}
+.trailer video{
+    max-width: 900px;
+    outline: none;
+}
+.trailer ion-icon{
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    cursor: pointer;
+    max-width: 32px;
+    color: var(--colorBotones);
 }
