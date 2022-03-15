@@ -1,6 +1,4 @@
 <?php
-define("titulo", "Elon Musk PHP");
-
-echo titulo;
-
+    header('Access-Control-Allow-Origin: *');
+    require 'menu.php';
 ?>
