@@ -1,12 +1,14 @@
 <?php
-
-define("titulo", "Elon Musk PHP");
-$variable = (int) 23;
-
-$tituloHTML = <<<HTML
-    <h1><em>"'${!${''} = titulo}'"  $variable</em></h1>
-HTML;
-
-
-echo $tituloHTML;
+    $plantilla-> imgen = (string) '<img src="img/logo.png">';
+    $plantilla-> menu = (string) '
+        <li><a href="#">Inicio</a></li>
+        <li><a href="#">Noticia</a></li>
+        <li><a href="#">Bibliografia</a></li>
+        <li><a href="#">Blog</a></li>
+        <li><a href="#">Compañias</a></li>
+    ';
+    $plantilla->buscar = (string) '
+        <input type="text" placeholder="Buscar">
+        <ion-icon name="search"></ion-icon>
+    ';
 ?>
